@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button onclick="hide()">Hide!</button><button onclick="reveal()">Reveal!</button>
+    <p id="textid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veniam doloremque iste eius culpa ab recusandae modi consequuntur sint. Magnam atque sunt, reprehenderit corrupti soluta culpa optio ea pariatur quod.</p>
+
+
+
+</body>
+
+<script>
+    function hide(){
+    let pElement = document.getElementById("textid");
+    pElement.style.opacity="0";
+    }
+
+    function reveal(){
+    let pElement = document.getElementById("textid");
+    pElement.style.opacity="100";
+    }
+
+
+</script>
+
+<style>
+    p{
+        color: rgb(63, 39, 204);
+        border: 1px solid rgb(48, 82, 177);
+        background-color: lightgreen;
+    }
+</style>
+
+</html>

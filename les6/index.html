@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollDice</title>
+</head>
+<body>
+    Hoooooooi!
+</body>
+
+<script>
+
+    function RollD6(){
+        let diceValue = Math.ceil(Math.random()*6)
+        
+        return diceValue
+
+    }
+
+    function Poyo() {
+    let d6_1 = RollD6();
+    let d6_2 = RollD6();
+    let d6_3 = RollD6();
+    let d6_4 = RollD6();
+    
+    let minimumDice = Math.min(d6_1, d6_2, d6_3, d6_4)
+    let top3 = d6_1 + d6_2 + d6_3 + d6_4 - minimumDice
+    return top3
+    }
+    console.log("STR:" + Poyo());
+    console.log("DEX:" + Poyo());
+    console.log("CON:" + Poyo());
+    console.log("INT:" + Poyo());
+    console.log("WIS:" + Poyo());
+    console.log("CHA:" + Poyo());
+</script>
+
+</html>

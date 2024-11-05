@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weken met functies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Howdy!
+</body>
+
+<script>
+    function printAlphabet(){
+        console.log("A");
+        console.log("B");
+        console.log("C");
+        console.log("D");
+        console.log("E");
+        console.log("F");
+        console.log("G");
+        console.log("H");
+        console.log("I");
+        console.log("J");
+        console.log("K");
+        console.log("L");
+        console.log("M");
+        console.log("N");
+        console.log("O");
+        console.log("P");
+        console.log("Q");
+        console.log("R");
+        console.log("S");
+        console.log("T");
+        console.log("U");
+        console.log("V");
+        console.log("W");
+        console.log("X");
+        console.log("Y");
+        console.log("Z");
+    }
+
+    function add(getal1, getal2){
+        let sum = getal1 + getal2;
+        console.log(sum);
+    }
+
+    function multiply(getal1, getal2){
+        let sum = getal1 * getal2;
+        console.log(sum);
+    }
+
+    function rollDice(){
+        let random = Math.random();
+        let getal = random * 6 + 1;
+        getal = Math.floor(getal);
+        return getal;
+    }
+
+    let dobbelsteen1 = rollDice();
+
+    console.log(dobbelsteen1);
+</script>
+
+</html>

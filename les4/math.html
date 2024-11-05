@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Age!!!!
+</body>
+<script>
+    function Age(year,month,day){
+        let now = new Date();
+        let birth = new Date(year, month, day); 
+        let miliseconds = now-birth;
+
+        console.log("Welk jaar ben je geboren?" + year)
+        console.log("Welke maand ben je geboren? " + month)
+        console.log("Welke dag ben je geboren? " + day)
+        console.log("Je bent " + miliseconds/1000/3600/24/365 + " jaar oud")
+    }
+
+    Age(2000,4,3);
+</script>
+</html>
